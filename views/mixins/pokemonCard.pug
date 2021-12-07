@@ -1,0 +1,30 @@
+mixin pokemonCard(pokemon)
+
+    div.card
+        div.card-header
+            div.card-title=pokemon.name
+                img.type-image(src=pokemon.typeimage class='type')
+        div.card-body
+            div.card-details
+                img.card-body-image(src=pokemon.pokeimage class='pokemon')
+            div.moves
+                div.move1
+                    div.cost
+                        img(src=pokemon.move1cost1 class='type')
+                        img(src=pokemon.move1cost2 class='type')
+                    div.move1-name=pokemon.move1name
+                    div.move1-power=pokemon.move1power
+                div.move2
+                    div.cost
+                        img(src=pokemon.move2cost1 class='type')
+                        img(src=pokemon.move2cost2 class='type')
+                        img(src=pokemon.move2cost3 class='type')
+                    div.move2-name=pokemon.move2name
+                    div.move2-power=pokemon.move2power
+            div.stats
+                div.weakness Weakness
+                    img(src=pokemon.weakness class='type')
+                div.resistance Resistance
+                    img(src=pokemon.resistance class='type')
+                div.retreat Retreat
+                    img(src=pokemon.retreatcost class='type')

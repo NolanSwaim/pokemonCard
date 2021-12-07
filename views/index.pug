@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  include mixins/pokemonCard
+  div.container
+    each pokemon in pokemonList
+      +pokemonCard(pokemon)
+
+
+
