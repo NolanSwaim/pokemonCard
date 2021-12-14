@@ -11,10 +11,14 @@ a {
 
 .container {
   padding: 48px;
+  display: flex;
+  gap: 16px;
+  flex-wrap:wrap;
+
 }
 
 .card {
-  background:orange;
+  background:#3d7dca;
   border-radius:10px;
   width:350px;
   padding:15px;
